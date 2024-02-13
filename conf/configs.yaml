@@ -15,3 +15,14 @@ data_transformation:
   train_array_path: data/train/train_array.npy
   test_array_path: data/test/test_array.npy
   preprocessor_path: models/preprocessors/preprocessor.pkl
+
+model_trainer:
+  train_array_path: data/train/train_array.npy
+  model_dir: models/trained/
+
+model_evaluation:
+  train_array_path: data/train/train_array.npy
+  test_array_path: data/test/test_array.npy
+  model_path: models/trained/lr_model.pkl
+  scores_path: models/scores/lr_model_scores.json
+  predictions_dir: models/predictions/
