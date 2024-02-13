@@ -1,0 +1,37 @@
+classes:
+  0: fail
+  1: pass
+
+raw_data_columns:
+  credit.policy: credit_policy 
+  purpose: purpose
+  int.rate: int_rate 
+  installment: installment
+  log.annual.inc: log_annual_inc 
+  dti: dti
+  fico: fico
+  days.with.cr.line: days_with_cr_line
+  revol.bal: revol_bal
+  revol.util: revol_util 
+  inq.last.6mths: inq_last_6mths
+  delinq.2yrs: delinq_2yrs
+  pub.rec: pub_rec
+  not.fully.paid: not_fully_paid
+
+processed_data_columns:
+  target:
+    credit_policy: int64
+  features:
+    purpose: object
+    int_rate: float64
+    installment: float64
+    log_annual_inc: float64
+    dti: float64
+    fico: int64
+    days_with_cr_line: float64
+    revol_bal: int64
+    revol_util: float64
+    inq_last_6mths: int64
+    delinq_2yrs: int64
+    pub_rec: int64
+    not_fully_paid: int64

@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "lending-approval-predictor"
+version = "0.1.0"
+description = "The project is about predicting whether a borrower meets the credit underwriting criteria of LendingClub.com or, not"
+authors = ["Udit Kumar Chatterjee <quantumudit@gmail.com>"]
+license = "NC-SA"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.26.4"
+pandas = "^2.2.0"
+matplotlib = "^3.8.2"
+seaborn = "^0.13.2"
+python-box = "^7.1.1"
+python-dotenv = "^1.0.1"
+scikit-learn = "^1.4.0"
+streamlit = "^1.31.0"
+pyarrow = "^15.0.0"
+tabulate = "^0.9.0"
+pyyaml = "^6.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.0"
+pre-commit = "^3.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

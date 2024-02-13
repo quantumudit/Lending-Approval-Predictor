@@ -1,0 +1,17 @@
+data_ingestion:
+  raw_data_path: data/raw/loan_data.csv
+  processed_data_path: data/processed/loan.csv
+
+data_preparation:
+  processed_data_path: data/processed/loan.csv
+  train_path: data/train/train_data.csv
+  test_path: data/test/test_data.csv
+  test_size_pct: 0.2
+  random_seed: 42
+
+data_transformation:
+  train_path: data/train/train_data.csv
+  test_path: data/test/test_data.csv
+  train_array_path: data/train/train_array.npy
+  test_array_path: data/test/test_array.npy
+  preprocessor_path: models/preprocessors/preprocessor.pkl
