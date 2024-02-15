@@ -18,7 +18,9 @@ data_transformation:
 
 model_trainer:
   train_array_path: data/train/train_array.npy
-  model_dir: models/trained/
+  test_array_path: data/test/test_array.npy
+  model_path: models/trained/model.pkl
+  scores_path: models/scores/model_scores.json
 
 model_evaluation:
   train_array_path: data/train/train_array.npy
