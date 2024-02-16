@@ -1,12 +1,12 @@
 """WIP
 """
 
-from src.components.data_preparation import DataPreparation
+from src.components.data_splitter import DataSplitter
 from src.exception import CustomException
 from src.logger import logger
 
 
-class DataPreparationPipeline:
+class DataSplitterPipeline:
     """_summary_"""
 
     def __init__(self):
@@ -20,7 +20,7 @@ class DataPreparationPipeline:
         """
         try:
             logger.info("Data Preparation started")
-            data_prep = DataPreparation()
+            data_prep = DataSplitter()
             data_prep.prepare_train_test_sets()
             logger.info("Data preparation completed successfully")
         except Exception as excp:
@@ -33,7 +33,7 @@ if __name__ == "__main__":
 
     try:
         logger.info(">>>>>> %s started <<<<<<", STAGE_NAME)
-        obj = DataPreparationPipeline()
+        obj = DataSplitterPipeline()
         obj.main()
         logger.info(">>>>>> %s completed <<<<<<\n\nx==========x", STAGE_NAME)
     except Exception as e:

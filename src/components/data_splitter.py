@@ -14,7 +14,7 @@ from src.logger import logger
 from src.utils.basic_utils import create_directories, read_yaml
 
 
-class DataPreparation:
+class DataSplitter:
     """
     This class is used for preparing the training and testing datasets. It
     reads the configuration files and prepares the datasets accordingly.

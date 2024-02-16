@@ -2,33 +2,33 @@
     {
         "model_name": "Decision Tree",
         "hyperparameters": {
-            "criterion": "entropy",
-            "max_features": "log2",
+            "criterion": "gini",
+            "max_features": "sqrt",
             "splitter": "best"
         },
         "accuracy_score_train": 1.0,
         "precision_score_train": 1.0,
         "recall_score_train": 1.0,
         "f1_score_train": 1.0,
-        "accuracy_score_test": 0.9733820459290188,
-        "precision_score_test": 0.9837977965003241,
-        "recall_score_test": 0.9831606217616581,
-        "f1_score_test": 0.9834791059280855
+        "accuracy_score_test": 0.9723382045929019,
+        "precision_score_test": 0.9850357839947951,
+        "recall_score_test": 0.9805699481865285,
+        "f1_score_test": 0.9827977929243752
     },
     {
         "model_name": "Random Forest",
         "hyperparameters": {
-            "criterion": "gini",
+            "criterion": "entropy",
             "max_features": "sqrt",
-            "n_estimators": 256
+            "n_estimators": 64
         },
-        "accuracy_score_train": 1.0,
-        "precision_score_train": 1.0,
+        "accuracy_score_train": 0.9998694857739494,
+        "precision_score_train": 0.9998378466028863,
         "recall_score_train": 1.0,
-        "f1_score_train": 1.0,
-        "accuracy_score_test": 0.988517745302714,
-        "precision_score_test": 0.9897039897039897,
+        "f1_score_train": 0.9999189167274791,
+        "accuracy_score_test": 0.9864300626304802,
+        "precision_score_test": 0.9871630295250321,
         "recall_score_test": 0.9961139896373057,
-        "f1_score_test": 0.9928986442866365
+        "f1_score_test": 0.9916183107672469
     }
 ]

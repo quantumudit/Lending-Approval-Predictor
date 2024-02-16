@@ -13,7 +13,7 @@ from src.logger import logger
 from src.utils.basic_utils import create_directories, read_yaml
 
 
-class DataIngestion:
+class DataProcessor:
     """
     This class is responsible for data ingestion and preprocessing. It reads
     configuration and schema from yaml files, reads raw data from a specified path,

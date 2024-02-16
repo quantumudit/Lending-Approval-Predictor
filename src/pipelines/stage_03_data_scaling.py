@@ -1,12 +1,12 @@
 """WIP
 """
 
-from src.components.data_transformation import DataTransformation
+from src.components.data_scaler import DataScaler
 from src.exception import CustomException
 from src.logger import logger
 
 
-class DataTransformPipeline:
+class DataScalerPipeline:
     """_summary_"""
 
     def __init__(self):
@@ -20,7 +20,7 @@ class DataTransformPipeline:
         """
         try:
             logger.info("Data Transformation started")
-            data_transform = DataTransformation()
+            data_transform = DataScaler()
             data_transform.transform_train_test_data()
             logger.info("Data transformation completed successfully")
         except Exception as excp:
@@ -33,7 +33,7 @@ if __name__ == "__main__":
 
     try:
         logger.info(">>>>>> %s started <<<<<<", STAGE_NAME)
-        obj = DataTransformPipeline()
+        obj = DataScalerPipeline()
         obj.main()
         logger.info(">>>>>> %s completed <<<<<<\n\nx==========x", STAGE_NAME)
     except Exception as e:

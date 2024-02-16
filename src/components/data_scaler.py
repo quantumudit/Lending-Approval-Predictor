@@ -22,7 +22,7 @@ from src.logger import logger
 from src.utils.basic_utils import create_directories, read_yaml, save_as_pickle
 
 
-class DataTransformation:
+class DataScaler:
     """
     This class is responsible for transforming raw data into a format suitable for
     machine learning models. It reads configuration and schema files, constructs a
