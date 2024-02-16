@@ -20,6 +20,7 @@ logs/
 
 # Ignore code spell extension JSON
 cspell.json
+todo.md
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
