@@ -25,6 +25,6 @@ model_trainer:
 model_evaluation:
   train_array_path: data/train/train_array.npy
   test_array_path: data/test/test_array.npy
-  model_path: models/trained/lr_model.pkl
-  scores_path: models/scores/lr_model_scores.json
+  model_path: models/trained/model.pkl
+  scores_path: models/scores/best_model_scores.json
   predictions_dir: models/predictions/
